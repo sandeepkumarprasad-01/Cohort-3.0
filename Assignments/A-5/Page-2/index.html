@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-left">
+            <img class="logo" src="Assets/logo.png" alt="Logo">
+            <ul class="nav-links">
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Hire a Designer</a></li>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="login">Log in</a>
+            <button class="signup">Sign up</button>
+        </div>
+    </nav>
+
+    <!-- nav bar container -->
+    <header class="nav-bar-container">
+        <div class="badge-wrapper">
+            <span class="nav-bar-container-badge">Over 3 million ready-to-work creatives!</span>
+        </div>
+        <h1>The world's destination<br>for design</h1>
+        <p>Get inspired by the work of millions of top-rated designers & agencies around the world.</p>
+        
+        <div class="search-bar">
+            <button class="shots-btn">Shots <i class="ri-arrow-down-s-line"></i></button>
+            <input type="text" placeholder="Search...">
+            <button class="search-icon"><i class="ri-search-line"></i></button>
+        </div>
+        
+        <ul class="trending">
+            <li>Trending searches:</li>
+            <li><a href="#">landing page</a></li>
+            <li><a href="#">e-commerce</a></li>
+            <li><a href="#">mobile app</a></li>
+            <li><a href="#">logo design</a></li>
+            <li><a href="#">dashboard</a></li>
+            <li><a href="#">icons</a></li>
+        </ul>
+    </header>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <button class="dropdown">Popular <i class="ri-arrow-down-s-line"></i></button>
+        <ul class="categories">
+            <li><a href="#" class="active">Discover</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Branding</a></li>
+            <li><a href="#">Illustration</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Print</a></li>
+            <li><a href="#">Product Design</a></li>
+            <li><a href="#">Typography</a></li>
+            <li><a href="#">Web Design</a></li>
+        </ul>
+        <button class="filter-btn"><i class="ri-filter-3-line"></i> Filters</button>
+    </section>
+
+    <!-- all card -->
+    <main class="all-card">
+        
+        <!-- Card 1 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section1 card3.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Fitness and step count App</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/6454839/avatars/small/a615730b861d93eaebc6a7c1ec276489.jpg?1622535470" alt="Avatar">
+                    <span class="name">Upnow Studio</span>
+                    <span class="badge pro">PRO</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 245</span>
+                    <span><i class="ri-eye-fill"></i> 15k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 (Video example) -->
+        <div class="card-container">
+            <div class="card">
+                <video autoplay loop muted playsinline>
+                    <source src="Assets/section1 card 2 video.mp4" type="video/mp4">
+                </video>
+                <div class="card-overlay">
+                    <span class="title">Hero 3D and Animation</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/122365/avatars/small/20c74fb3157b2ff718ecaa4e672727ce.png?1582021595" alt="Avatar">
+                    <span class="name">FANCY</span>
+                    <span class="badge team">TEAM</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 412</span>
+                    <span><i class="ri-eye-fill"></i> 21k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section1 card4.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Liverage Crypto trading UI</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/2070381/avatars/small/c1106e224e75d7e4871e98da8d752f9b.png?1674205562" alt="Avatar">
+                    <span class="name">Extej UI UX</span>
+                    <span class="badge pro">PRO</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 189</span>
+                    <span><i class="ri-eye-fill"></i> 8.4k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section2 card1.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Plexo Dashboard</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/14268/avatars/small/7041e171302fb3b22b7dc17b77ee0077.jpg?1676882255" alt="Avatar">
+                    <span class="name">Emote</span>
+                    <span class="badge team">TEAM</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 321</span>
+                    <span><i class="ri-eye-fill"></i> 18k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section2 card2.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Altecho-Webdesign</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/1008875/avatars/small/7dcce53a1d948ad855cc5e7141f391b8.png?1582285160" alt="Avatar">
+                    <span class="name">Victa Ville</span>
+                    <span class="badge pro">PRO</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 145</span>
+                    <span><i class="ri-eye-fill"></i> 7.2k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section2 card 3.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Smart Home App</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/1998175/avatars/small/20c156170560249cda81ccb2eb8595cb.jpg?1540302324" alt="Avatar">
+                    <span class="name">Bonsai</span>
+                    <span class="badge pro">PRO</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 522</span>
+                    <span><i class="ri-eye-fill"></i> 31k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section 2 card 4.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Doverange Layout</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/673318/avatars/small/70d740c0c005b822bbdc0cba1e3b68ea.png?1551460592" alt="Avatar">
+                    <span class="name">Type08 (Alen)</span>
+                    <span class="badge pro">PRO</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 188</span>
+                    <span><i class="ri-eye-fill"></i> 6.1k</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card-container">
+            <div class="card">
+                <img src="Assets/section1 card3.webp" alt="Design Shot">
+                <div class="card-overlay">
+                    <span class="title">Financial Mobile App</span>
+                    <div class="actions">
+                        <i class="ri-heart-line"></i>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="user-info">
+                    <img src="https://cdn.dribbble.com/users/1204859/avatars/small/18fc3bf310034a781f96435dd3f3d790.jpg?1674567295" alt="Avatar">
+                    <span class="name">Ronus IT</span>
+                    <span class="badge team">TEAM</span>
+                </div>
+                <div class="stats">
+                    <span><i class="ri-heart-fill"></i> 265</span>
+                    <span><i class="ri-eye-fill"></i> 11k</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Sign up Section -->
+    <section class="signup-cta">
+        <h2>Sign up to continue</h2>
+        <button class="signup">Sign up</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Dribbble</div>
+        <ul class="footer-links">
+            <li><a href="#">For designers</a></li>
+            <li><a href="#">Hire talent</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="footer-social">
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-facebook-box-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 Dribbble</span>
+            <div class="footer-bottom-links">
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Jobs</a>
+                <a href="#">Designers</a>
+                <a href="#">Freelancers</a>
+                <a href="#">Tags</a>
+                <a href="#">Places</a>
+                <a href="#">Resources</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
