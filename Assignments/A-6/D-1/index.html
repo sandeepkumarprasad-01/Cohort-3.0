@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Two Leaves and a Bud — Premium organic whole leaf teas from the Colorado mountains. Shop sachets, matcha, chai, and tea lattes.">
+  <meta name="theme-color" content="#2a2857">
+  <title>Two Leaves and a Bud | Premium Organic Tea</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🍃</text></svg>">
+</head>
+<body>
+
+  <!-- ========== ANNOUNCEMENT BAR ========== -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-bar__inner">
+      <span class="announcement-bar__text">Free shipping on orders over $49</span>
+      <span class="announcement-bar__text">Organic & sustainably sourced</span>
+      <span class="announcement-bar__text">Compostable tea sachets</span>
+      <span class="announcement-bar__text">Based in the Colorado mountains</span>
+      <span class="announcement-bar__text">Free shipping on orders over $49</span>
+      <span class="announcement-bar__text">Organic & sustainably sourced</span>
+      <span class="announcement-bar__text">Compostable tea sachets</span>
+      <span class="announcement-bar__text">Based in the Colorado mountains</span>
+    </div>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#" class="logo" id="logo">
+        <div class="logo__icon">
+          <svg class="logo__leaf" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 4C14 8 8 16 8 26c0 6 4 10 8 12" stroke="#5a7247" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M21 4C28 8 34 16 34 26c0 6-4 10-8 12" stroke="#8aaa6f" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M21 4v34" stroke="#5a7247" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="14" cy="6" r="3" fill="#8aaa6f" opacity="0.6"/>
+            <circle cx="28" cy="6" r="3" fill="#5a7247" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="logo__text">
+          Two Leaves
+          <span>and a bud</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" id="main-nav">
+        <ul class="nav__list">
+          <li><a href="#categories" class="nav__link">Shop</a></li>
+          <li><a href="#featured" class="nav__link">Best Sellers</a></li>
+          <li><a href="#story" class="nav__link">Our Story</a></li>
+          <li><a href="#journal" class="nav__link">Tea Journal</a></li>
+          <li><a href="#newsletter" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav__actions">
+        <a href="#" class="nav__action-btn" id="search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </a>
+        <a href="#" class="nav__action-btn" id="account-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <a href="#" class="nav__action-btn" id="cart-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count">2</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle__label" aria-label="Toggle menu">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </label>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav" id="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li><a href="#categories" class="mobile-nav__link" onclick="document.getElementById('menu-toggle').checked=false">Shop</a></li>
+            <li><a href="#featured" class="mobile-nav__link" onclick="document.getElementById('menu-toggle').checked=false">Best Sellers</a></li>
+            <li><a href="#story" class="mobile-nav__link" onclick="document.getElementById('menu-toggle').checked=false">Our Story</a></li>
+            <li><a href="#journal" class="mobile-nav__link" onclick="document.getElementById('menu-toggle').checked=false">Tea Journal</a></li>
+            <li><a href="#newsletter" class="mobile-nav__link" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
+          </ul>
+          <div class="mobile-nav__actions">
+            <a href="#" class="btn btn-primary btn-arrow">Shop Now</a>
+            <a href="#" class="btn btn-secondary">Find a Store</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-banner.png" alt="Lush green tea plantation on mountain slopes with morning mist and golden sunlight" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__overline">✦ From the Colorado Mountains</p>
+        <h1 class="hero__title">A Cup That Fits <em>Every</em> Moment</h1>
+        <p class="hero__desc">
+          Organic whole leaf teas, hand-selected and crafted in the heart of the Colorado mountains. 
+          Every sip tells a story of quality, sustainability, and community.
+        </p>
+        <div class="hero__actions">
+          <a href="#categories" class="btn btn-cream btn-arrow">Shop Collection</a>
+          <a href="#story" class="btn btn-secondary" style="border-color: rgba(251,249,235,0.4); color: var(--color-cream);">Our Story</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative Floating Leaf -->
+    <div class="hero__deco">
+      <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M80 10C50 30 20 70 30 120c5 25 25 30 50 30s45-5 50-30C140 70 110 30 80 10Z" fill="rgba(138,170,111,0.3)" stroke="rgba(251,249,235,0.3)" stroke-width="1.5"/>
+        <path d="M80 10v140" stroke="rgba(251,249,235,0.2)" stroke-width="1"/>
+        <path d="M80 40C60 55 45 80 50 110" stroke="rgba(251,249,235,0.15)" stroke-width="1" fill="none"/>
+        <path d="M80 40C100 55 115 80 110 110" stroke="rgba(251,249,235,0.15)" stroke-width="1" fill="none"/>
+      </svg>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll">
+      <span class="hero__scroll-text">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIES ========== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">Browse by Category</span>
+        <h2>Find Your Perfect Cup</h2>
+        <p>From energizing matcha to calming chamomile, explore our curated collection of premium organic teas.</p>
+      </div>
+
+      <div class="categories__grid">
+        <!-- Category 1 -->
+        <a href="#" class="category-card animate-on-scroll delay-1" id="cat-green-tea">
+          <img src="images/green-tea.png" alt="Organic green tea sachets" class="category-card__img">
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content">
+            <p class="category-card__tag">12 Varieties</p>
+            <h3 class="category-card__title">Tea Sachets</h3>
+            <span class="category-card__link">Shop Now</span>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="#" class="category-card animate-on-scroll delay-2" id="cat-matcha">
+          <img src="images/matcha.png" alt="Premium organic matcha" class="category-card__img">
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content">
+            <p class="category-card__tag">Ceremonial Grade</p>
+            <h3 class="category-card__title">Matcha</h3>
+            <span class="category-card__link">Shop Now</span>
+          </div>
+        </a>
+
+        <!-- Category 3 -->
+        <a href="#" class="category-card animate-on-scroll delay-3" id="cat-chai">
+          <img src="images/chai.png" alt="Mountain High Chai blend" class="category-card__img">
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content">
+            <p class="category-card__tag">Best Seller</p>
+            <h3 class="category-card__title">Chai & Spice</h3>
+            <span class="category-card__link">Shop Now</span>
+          </div>
+        </a>
+
+        <!-- Category 4 -->
+        <a href="#" class="category-card animate-on-scroll delay-4" id="cat-latte">
+          <img src="images/latte.png" alt="Tea latte mixes" class="category-card__img">
+          <div class="category-card__overlay"></div>
+          <div class="category-card__content">
+            <p class="category-card__tag">New Arrivals</p>
+            <h3 class="category-card__title">Tea Lattes</h3>
+            <span class="category-card__link">Shop Now</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED PRODUCTS ========== -->
+  <section class="featured" id="featured">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">Fan Favorites</span>
+        <h2>Our Best Sellers</h2>
+        <p>The teas everyone can't stop talking about — tried, loved, and re-ordered.</p>
+      </div>
+
+      <div class="featured__grid">
+        <!-- Product 1 -->
+        <div class="product-card animate-on-scroll delay-1" id="product-1">
+          <span class="product-card__badge">Best Seller</span>
+          <div class="product-card__img-wrap">
+            <img src="images/green-tea.png" alt="Organic Tropical Green Tea" class="product-card__img">
+            <div class="product-card__quick">
+              <button class="product-card__quick-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Green Tea</p>
+            <h4 class="product-card__name">Organic Tropical Green</h4>
+            <div class="product-card__rating">
+              <div class="product-card__stars">★★★★★</div>
+              <span class="product-card__review-count">(247)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$8.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card animate-on-scroll delay-2" id="product-2">
+          <div class="product-card__img-wrap">
+            <img src="images/chai.png" alt="Mountain High Chai" class="product-card__img">
+            <div class="product-card__quick">
+              <button class="product-card__quick-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Chai</p>
+            <h4 class="product-card__name">Mountain High Chai</h4>
+            <div class="product-card__rating">
+              <div class="product-card__stars">★★★★★</div>
+              <span class="product-card__review-count">(189)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$8.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card animate-on-scroll delay-3" id="product-3">
+          <span class="product-card__badge" style="background: var(--color-green);">Organic</span>
+          <div class="product-card__img-wrap">
+            <img src="images/matcha.png" alt="Ceremonial Matcha" class="product-card__img">
+            <div class="product-card__quick">
+              <button class="product-card__quick-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Matcha</p>
+            <h4 class="product-card__name">Ceremonial Grade Matcha</h4>
+            <div class="product-card__rating">
+              <div class="product-card__stars">★★★★★</div>
+              <span class="product-card__review-count">(312)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$24.99</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card animate-on-scroll delay-4" id="product-4">
+          <span class="product-card__badge" style="background: var(--color-gold);">Sale</span>
+          <div class="product-card__img-wrap">
+            <img src="images/herbal.png" alt="Organic Chamomile" class="product-card__img">
+            <div class="product-card__quick">
+              <button class="product-card__quick-btn">Quick Add</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <p class="product-card__category">Herbal</p>
+            <h4 class="product-card__name">Organic Chamomile</h4>
+            <div class="product-card__rating">
+              <div class="product-card__stars">★★★★☆</div>
+              <span class="product-card__review-count">(156)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$7.49</span>
+              <span class="product-card__price-old">$8.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRUST BAR ========== -->
+  <div class="trust-bar" id="trust-bar">
+    <div class="trust-bar__inner">
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>100% Organic</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Compostable Sachets</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Ethically Sourced</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Colorado Mountain Crafted</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Whole Leaf Tea</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Community in a Cup</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>100% Organic</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Compostable Sachets</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Ethically Sourced</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Colorado Mountain Crafted</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Whole Leaf Tea</span>
+      <span class="trust-bar__item"><span class="trust-bar__dot"></span>Community in a Cup</span>
+    </div>
+  </div>
+
+  <!-- ========== STORY / ABOUT ========== -->
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story__grid">
+        <!-- Image Side -->
+        <div class="story__img-wrap animate-left">
+          <img src="images/about.png" alt="Person enjoying tea on mountain deck at sunrise" class="story__img">
+          <div class="story__img-badge">
+            <span class="story__badge-number">20+</span>
+            <span class="story__badge-text">Years crafting<br>quality teas</span>
+          </div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="story__content animate-right">
+          <span class="overline">Our Story</span>
+          <h2>Born in the Mountains, Brewed for <em>Everyone</em></h2>
+          <p>
+            Nestled in the heart of the Colorado Rockies, Two Leaves and a Bud was founded on a simple belief: 
+            tea should be extraordinary. We source only the top two leaves and a bud from each tea plant — 
+            the most flavorful, nutrient-rich part of the harvest.
+          </p>
+          <p>
+            Every cup we craft reflects our commitment to organic farming, sustainable practices, 
+            and the kind of warmth that turns strangers into friends.
+          </p>
+
+          <div class="story__features">
+            <div class="story__feature">
+              <span class="story__feature-icon">🌿</span>
+              <span class="story__feature-text">100% Organic<br>Ingredients</span>
+            </div>
+            <div class="story__feature">
+              <span class="story__feature-icon">♻️</span>
+              <span class="story__feature-text">Compostable<br>Packaging</span>
+            </div>
+            <div class="story__feature">
+              <span class="story__feature-icon">🏔️</span>
+              <span class="story__feature-text">Colorado<br>Mountain Roots</span>
+            </div>
+            <div class="story__feature">
+              <span class="story__feature-icon">🤝</span>
+              <span class="story__feature-text">Fair Trade<br>Partnerships</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary btn-arrow">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">What Tea Lovers Say</span>
+        <h2>Community in a Cup</h2>
+        <p>Real stories from our tea community — because the best reviews come from the happiest sippers.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card animate-on-scroll delay-1" id="testimonial-1">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">
+            "The Organic Tropical Green has completely replaced my morning coffee. It's smooth, 
+            bright, and gives me steady energy throughout the day. Absolutely love it!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">S</div>
+            <div>
+              <p class="testimonial-card__name">Sarah M.</p>
+              <p class="testimonial-card__title">Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card animate-on-scroll delay-2" id="testimonial-2">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">
+            "I've been ordering the Mountain High Chai for two years now. The spice blend is perfect — 
+            warming without being overwhelming. My whole family loves it."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">J</div>
+            <div>
+              <p class="testimonial-card__name">James K.</p>
+              <p class="testimonial-card__title">Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card animate-on-scroll delay-3" id="testimonial-3">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__quote">
+            "The quality difference is incredible. You can literally see the whole leaves unfurl 
+            in the sachet. Plus, knowing they're compostable makes me feel great about my choice."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">A</div>
+            <div>
+              <p class="testimonial-card__name">Aisha R.</p>
+              <p class="testimonial-card__title">Verified Buyer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOURNAL / BLOG ========== -->
+  <section class="journal" id="journal">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="overline">The Tea Journal</span>
+        <h2>Sip, Learn, Enjoy</h2>
+        <p>Brewing guides, recipes, and stories from our tea community.</p>
+      </div>
+
+      <div class="journal__grid">
+        <!-- Blog 1 -->
+        <a href="#" class="journal-card animate-on-scroll delay-1" id="blog-1">
+          <div class="journal-card__img-wrap">
+            <img src="images/blog-brewing.png" alt="Tea brewing setup" class="journal-card__img">
+            <span class="journal-card__tag">Tea 101</span>
+          </div>
+          <div class="journal-card__content">
+            <p class="journal-card__date">May 15, 2026</p>
+            <h3 class="journal-card__title">The Perfect Brew: A Beginner's Guide to Whole Leaf Tea</h3>
+            <p class="journal-card__excerpt">
+              Master the art of brewing with our comprehensive guide covering water temperature, 
+              steep times, and the secret to unlocking maximum flavor.
+            </p>
+            <span class="journal-card__link">Read More →</span>
+          </div>
+        </a>
+
+        <!-- Blog 2 -->
+        <a href="#" class="journal-card animate-on-scroll delay-2" id="blog-2">
+          <div class="journal-card__img-wrap">
+            <img src="images/latte.png" alt="Matcha latte art" class="journal-card__img">
+            <span class="journal-card__tag">Recipe</span>
+          </div>
+          <div class="journal-card__content">
+            <p class="journal-card__date">May 8, 2026</p>
+            <h3 class="journal-card__title">Iced Matcha Latte: Our Summer Favorite Recipe</h3>
+            <p class="journal-card__excerpt">
+              Beat the heat with our signature iced matcha latte — creamy, refreshing, and 
+              packed with antioxidants. Only 3 ingredients needed.
+            </p>
+            <span class="journal-card__link">Read More →</span>
+          </div>
+        </a>
+
+        <!-- Blog 3 -->
+        <a href="#" class="journal-card animate-on-scroll delay-3" id="blog-3">
+          <div class="journal-card__img-wrap">
+            <img src="images/iced-tea.png" alt="Refreshing iced tea" class="journal-card__img">
+            <span class="journal-card__tag">Sustainability</span>
+          </div>
+          <div class="journal-card__content">
+            <p class="journal-card__date">April 28, 2026</p>
+            <h3 class="journal-card__title">Why Compostable Sachets Matter for Our Planet</h3>
+            <p class="journal-card__excerpt">
+              Most tea bags contain plastic. Ours don't. Learn about our journey to create 
+              fully compostable sachets and what it means for the environment.
+            </p>
+            <span class="journal-card__link">Read More →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== NEWSLETTER ========== -->
+  <section class="newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter__inner animate-scale">
+        <div class="newsletter__content">
+          <span class="overline">Stay Connected</span>
+          <h2>Join the Tea Community</h2>
+          <p>Get exclusive offers, brewing tips, and new arrival updates delivered straight to your inbox.</p>
+          <form class="newsletter__form" id="newsletter-form" action="#" method="POST">
+            <input type="email" class="newsletter__input" id="newsletter-email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-cream">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__top">
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <svg width="36" height="36" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 4C14 8 8 16 8 26c0 6 4 10 8 12" stroke="#8aaa6f" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M21 4C28 8 34 16 34 26c0 6-4 10-8 12" stroke="#5a7247" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M21 4v34" stroke="#8aaa6f" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="14" cy="6" r="3" fill="#8aaa6f" opacity="0.6"/>
+              <circle cx="28" cy="6" r="3" fill="#5a7247" opacity="0.6"/>
+            </svg>
+            <div class="footer__logo-text">
+              Two Leaves
+              <span>and a bud</span>
+            </div>
+          </div>
+          <p class="footer__desc">
+            An independent tea company from the Colorado mountains, crafting organic whole leaf 
+            teas since 2005. Because every cup should be a moment worth savoring.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 4.1 2.5 7.6 6 9.2 0-1-.1-2.5.2-3.6l1.4-6s-.4-.7-.4-1.8c0-1.7 1-3 2.2-3 1 0 1.5.8 1.5 1.7 0 1-.7 2.6-1 4-.3 1.2.6 2.2 1.8 2.2 2.1 0 3.7-2.2 3.7-5.5 0-2.9-2.1-4.9-5-4.9-3.4 0-5.4 2.6-5.4 5.2 0 1 .4 2.1.9 2.7.1.1.1.2.1.3l-.4 1.4c0 .2-.2.3-.4.2C5.3 16.8 4 14.7 4 12 4 7.6 7.3 3.5 12.4 3.5c4 0 7.1 2.9 7.1 6.7 0 4-2.5 7.3-6 7.3-1.2 0-2.3-.6-2.7-1.3l-.7 2.8c-.3 1-.9 2.1-1.4 2.8C10 22 11 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2Z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Shop Column -->
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <ul class="footer__list">
+            <li><a href="#">All Tea</a></li>
+            <li><a href="#">Tea Sachets</a></li>
+            <li><a href="#">Loose Leaf</a></li>
+            <li><a href="#">Matcha</a></li>
+            <li><a href="#">Tea Lattes</a></li>
+            <li><a href="#">Gifts & Samplers</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__list">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Tea Journal</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Support Column -->
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__list">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Two Leaves and a Bud Tea Company. All rights reserved.</p>
+        <div class="footer__payments">
+          <span class="footer__payment-icon">VISA</span>
+          <span class="footer__payment-icon">MC</span>
+          <span class="footer__payment-icon">AMEX</span>
+          <span class="footer__payment-icon">PP</span>
+          <span class="footer__payment-icon">AP</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
