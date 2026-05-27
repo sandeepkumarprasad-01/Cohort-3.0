@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Pokedex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+  <header class="header">
+    <button class="icon-btn">☰</button>
+    <img src="https://imgs.search.brave.com/Fbbn1nxz_79tBxpkGAfg1qqqrkFAzWtaPYrZsygX5lg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi85Lzk4L0lu/dGVybmF0aW9uYWxf/UG9rJUMzJUE5bW9u/X2xvZ28uc3ZnLzI1/MHB4LUludGVybmF0/aW9uYWxfUG9rJUMz/JUE5bW9uX2xvZ28u/c3ZnLnBuZw" alt="Pokemon Logo" class="logo">
+    <button class="icon-btn">⚙</button>
+  </header>
+
+  <!-- search  -->
+  <section class="search-section">
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input type="text" placeholder="Search for a Pokémon..." class="search-input" />
+    </div>
+    <div class="filter-box">
+      <button class="filter-btn">Filter by types</button>
+      <span class="filter-icon">⌄</span>
+    </div>
+
+    <button class="sort-btn">⇅</button>
+  </section>
+
+  <!-- pokemon division -->
+  <main class="pokemon-cards-container">
+    
+    <!-- card 1 -->
+    <div class="card green-card">
+      <div class="card-header">
+        <p class="pokemon-id">#0908</p>
+        <button class="favorite-btn">♡</button>
+      </div>
+      <div class="pokemon-image-bg">
+        <img src="./meowscarda.webp" alt="Meowscarada" class="pokemon-img">
+      </div>
+      <h2 class="pokemon-name">Meowscarada</h2>
+      <div class="card-footer">
+        <p class="type-tag green-tag">🍃 GRASS</p>
+        <button class="action-btn">→</button>
+      </div>
+    </div>
+
+
+
+    <!-- card2 -->
+    <div class="card steel-card">
+      <div class="card-header">
+        <p class="pokemon-id">#0624</p>
+        <button class="favorite-btn">♡</button>
+      </div>
+      <div class="pokemon-image-bg">
+        <img src="./Pawniard-Pokemon-PNG-Isolated-HD.webp" alt="Pawniard" class="pokemon-img">
+      </div>
+      <h2 class="pokemon-name">Pawniard</h2>
+      <div class="card-footer">
+        <p class="type-tag steel-tag">⬢ DARK/STEEL</p>
+        <button class="action-btn">→</button>
+      </div>
+    </div>
+
+
+
+    <!-- card3 -->
+    <div class="card fire-card">
+      <div class="card-header">
+        <p class="pokemon-id">#0229</p>
+        <button class="favorite-btn">♡</button>
+      </div>
+      <div class="pokemon-image-bg">
+        <img src="./Houndoom-Pokemon-Transparent-File.webp" alt="Houndoom" class="pokemon-img">
+      </div>
+      <h2 class="pokemon-name">Houndoom</h2>
+      <div class="card-footer">
+        <p class="type-tag fire-tag">🔥 DARK/FIRE</p>
+        <button class="action-btn">→</button>
+      </div>
+    </div>
+
+   <!-- card4 -->
+
+    <div class="card psychic-card">
+      <div class="card-header">
+        <p class="pokemon-id">#0686</p>
+        <button class="favorite-btn">♡</button>
+      </div>
+      <div class="pokemon-image-bg">
+        <img src="./Inkay-Pokemon-PNG-HD.png" alt="Inkay" class="pokemon-img">
+      </div>
+      <h2 class="pokemon-name">Inkay</h2>
+      <div class="card-footer">
+        <p class="type-tag psychic-tag">💧 DARK/PSYCHIC</p>
+        <button class="action-btn">→</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 4. Explore, Filter, Collection, Stats -->
+  <section class="features-section">
+    <div class="feature-item">
+      <i class="feature-icon icon-blue">◉</i>
+      <div class="feature-text">
+        <p class="feature-title">Explore</p>
+        <p class="feature-desc">Find Pokémon</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="feature-icon icon-green">◍</i>
+      <div class="feature-text">
+        <p class="feature-title">Filter</p>
+        <p class="feature-desc">By types</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="feature-icon icon-yellow">★</i>
+      <div class="feature-text">
+        <p class="feature-title">Collection</p>
+        <p class="feature-desc">Save items</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <i class="feature-icon icon-purple">⚲</i>
+      <div class="feature-text">
+        <p class="feature-title">Stats</p>
+        <p class="feature-desc">View details</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>◉ © 2024 Pokémon. All rights reserved.</p>
+  </footer>
+</body>
+</html>
