@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHINSEI VILLAGE | Digital Spiritualism</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=Space+Mono:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#ebc246",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#4d4549",
+                        "tertiary-fixed": "#ecdfe5",
+                        "surface-container": "#251d25",
+                        "background": "#181118",
+                        "surface-container-high": "#30272f",
+                        "on-background": "#eddee9",
+                        "on-primary-fixed": "#241a00",
+                        "surface-variant": "#3b323a",
+                        "secondary-fixed": "#cae6ff",
+                        "tertiary-fixed-dim": "#cfc3c9",
+                        "on-tertiary-container": "#5d5459",
+                        "on-surface": "#eddee9",
+                        "primary-fixed": "#ffe08b",
+                        "surface-bright": "#3f363f",
+                        "surface-container-highest": "#3b323a",
+                        "outline": "#99907b",
+                        "on-secondary": "#00344e",
+                        "inverse-surface": "#eddee9",
+                        "surface-tint": "#ebc246",
+                        "on-primary-fixed-variant": "#584400",
+                        "inverse-on-surface": "#362e36",
+                        "on-primary-container": "#6b5400",
+                        "surface-container-low": "#211921",
+                        "secondary-container": "#2899d8",
+                        "surface": "#181118",
+                        "on-tertiary": "#362e33",
+                        "secondary-fixed-dim": "#8ccdff",
+                        "on-secondary-container": "#002d44",
+                        "tertiary": "#f3e6ec",
+                        "tertiary-container": "#d6cad0",
+                        "surface-container-lowest": "#130c13",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-fixed": "#001e2f",
+                        "outline-variant": "#4d4635",
+                        "primary": "#ffe8ad",
+                        "on-tertiary-fixed": "#201a1e",
+                        "primary-container": "#f2c94c",
+                        "surface-dim": "#181118",
+                        "on-secondary-fixed-variant": "#004b6f",
+                        "on-primary": "#3d2f00",
+                        "on-surface-variant": "#d0c5af",
+                        "inverse-primary": "#745b00",
+                        "secondary": "#8ccdff",
+                        "error": "#ffb4ab"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-tablet": "40px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-md": ["Space Mono"],
+                        "headline-md": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "headline-sm": ["Syne"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Syne"],
+                        "display-xl": ["Syne"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .stencil-line-through {
+            position: relative;
+            display: inline-block;
+        }
+        .stencil-line-through::after {
+            content: "";
+            position: absolute;
+            left: -5%;
+            top: 50%;
+            width: 110%;
+            height: 4px;
+            background: currentColor;
+            transform: translateY(-50%);
+            mix-blend-mode: exclusion;
+        }
+        .btn-line-through {
+            position: relative;
+        }
+        .btn-line-through::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+        .btn-line-through:hover::after {
+            width: 0;
+        }
+        .glass-panel {
+            background: rgba(44, 36, 44, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(235, 194, 70, 0.2);
+        }
+        .curved-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+        .curved-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+        .curved-divider .shape-fill {
+            fill: #2c242c;
+        }
+        .glow-soft {
+            box-shadow: 0 0 40px rgba(235, 194, 70, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Header / TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+<div class="max-w-7xl mx-auto px-margin-desktop py-4 flex justify-between items-center">
+<div class="font-headline-md text-headline-sm font-bold text-primary-fixed-dim tracking-tight">
+                SHINSEI ◆ VILLAGE
+            </div>
+<nav class="hidden md:flex bg-surface-container/50 px-6 py-2 rounded-full border border-outline-variant/20 gap-8 items-center backdrop-blur-sm">
+<a class="text-primary-fixed font-bold border-b-2 border-primary-fixed pb-1 font-body-md" href="#">Vision</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-fixed-dim transition-colors duration-300" href="#">Collection</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-fixed-dim transition-colors duration-300" href="#">Roadmap</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-fixed-dim transition-colors duration-300" href="#">Team</a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-fixed-dim transition-colors duration-300 flex items-center gap-1" href="#">Mint <span class="material-symbols-outlined text-[14px]">north_east</span></a>
+<a class="text-on-surface-variant font-body-md hover:text-primary-fixed-dim transition-colors duration-300 flex items-center gap-1" href="#">Wallet Checker <span class="material-symbols-outlined text-[14px]">north_east</span></a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="w-10 h-10 rounded-full bg-on-background flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<img alt="Instagram" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6Fh6wAGlvBTbu6yUhPqLyvueSGcq-Oxf7b4wqlCwjj22LjKaTcRVKqaMzCNtSVKSU0T3PND2wrMFwHsQHlEShQBRcrX8d1GjQCSEBXtOiS8CxqUmU_sr0GziR7MmtWxHjRe8uUorHLQoZDQwWXxVgvihWlpjGvUTfoUGFUxTia9aCNp8Jbn9ZmemX3eDDRZsDIuIjKjunZX9OYxE-fDISSLzDH3n3sBd7hCKTpAVaAKtMitz2gRT4RRRtLj8adk_KbJ5PzUDWeQ"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-on-background flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<img alt="Telegram" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_rtn8WsMVN-Kg1_AsTnwaojWdDk7hbIs5O4I1zsxrs5Xwk0xbbfSbF9ZVBM8jP9eR15hsAMt2nMFN1yhIt3O39e1JyMJ6-W-gzBvueX90RQsX5f6c6Ih8lI8cF3onI4q9yglagLRFWL6wLQMPa62vrx64G9qRjKrLDQAAoNic-INkFgbfMC2gYa6GTtFkNwxUlEQAhHu8i5Lell3fxyp1AXA5TfeTqVMg79h57HUdq7aBa8mdJBEdXQZlC14mcsYPoJZed1J91w"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-on-background flex items-center justify-center hover:scale-110 transition-transform" href="#">
+<img alt="Discord" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASdZrEfwyF49gjxabDpTOeascAenztu80NyXLLHTOmFcWY2lkE3DFIMUsKbFcXhDmbWqNYI3cTdFtzVhYJZOSCGktmI8xo8q3W2lLSpQuy2zz75u-H5Lr6DiQhnLEfZl0ACICQ6rlXBs6j1hP-YA4tG9k0WvAGjcpnMd5HvzhC1kZHyTGbG02WFHUwX-il8OWnGfSZlLGJiFuswe0LR1CC8i0KKzNgMwQTK5IPiHf2Il_7A70UB2OL55aNvlB0AhPWNIU0o_qMmw"/>
+</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Mystical Japanese Village Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_27tVDPaFYPOIKz-IKuaSsY_ZNTEOUSe2StY_M3k0TkYmpaicnZk23j8z4hKDdLKCt2oJhmFDwFNIYtldnyNDzFpEMQQAdwq-CO0GjLgkUdOpK_XG-YNX5Aq7ldY7_KmZ6-SyZcdk90bkHJqTC6w4Q0hg-ZNLhqoeWOm_JZhpC2sxqdfBtWE_FtAjOqLHZ5Je3p88JM3WBOL6qHrun_Vjw1MmrTAIAL7oEc2S1Rbazqxkkf_ag-JON8TqSmxm_VkC-eyvu7umg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-margin-desktop flex flex-col items-center">
+<div class="relative w-full flex flex-col md:flex-row items-center justify-between gap-0">
+<!-- Left Text Column -->
+<div class="flex flex-col items-center md:items-start z-20">
+<span class="text-primary italic font-body-lg mb-4 opacity-90">Join the Mystic Adventure</span>
+<h1 class="font-display-xl text-[64px] md:text-[120px] text-on-background stencil-line-through leading-none tracking-tighter">
+                        SHINSEI
+                    </h1>
+</div>
+<!-- Center Character -->
+<div class="relative z-30 -my-20 md:my-0 scale-90 md:scale-110 drop-shadow-[0_0_50px_rgba(235,194,70,0.3)]">
+<img alt="Shinsei Monkey Warrior" class="max-h-[70vh] object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmx7_es9P2z9yGv1cav7XSqvx13EOv1vyfJ8GkIXXk9xyTb7VI0sC9e5SGu1OIx8kn6TvKsXXO66gAOcIz9SXzh2s81Fy5uXqTt85YE5JraloLGwRXgTBzVFCZOs_9x5oMcRjWEUFi5dW2Mku_-m59JAGGZ4152sRGiXcr0Nt02sGeG-X-E9x5dsDNnOyZwx8cCtuA5RI4W9TnD89rBm0rdrxEEzIDK1N7Ia7EFjLuTu8wMkD65oJutveaSWQfPRzulxmlspT1yQ"/>
+</div>
+<!-- Right Text Column -->
+<div class="flex flex-col items-center md:items-end z-20">
+<h1 class="font-display-xl text-[64px] md:text-[120px] text-on-background stencil-line-through leading-none tracking-tighter">
+                        VILLAGE
+                    </h1>
+<span class="text-primary italic font-body-lg mt-4 opacity-90 text-right">Genuine Storytelling Project</span>
+</div>
+</div>
+<!-- Hero CTA -->
+<div class="mt-12 z-40">
+<button class="bg-primary-fixed-dim text-on-primary-fixed px-10 py-4 rounded-full font-headline-sm flex items-center gap-3 hover:scale-105 active:scale-95 transition-all duration-300 glow-soft">
+<span class="btn-line-through">MINT NOW</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward_ios</span>
+</button>
+</div>
+</div>
+<!-- Curved Divider -->
+<div class="curved-divider">
+<svg data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="shape-fill" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"></path>
+</svg>
+</div>
+</section>
+<!-- Vision Section -->
+<section class="relative bg-surface-container-low py-section-gap overflow-hidden">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="flex flex-col items-center mb-16">
+<h2 class="font-display-xl text-display-xl text-on-background stencil-line-through mb-4">VISION</h2>
+<div class="flex items-center gap-4 text-primary-fixed-dim">
+<div class="h-[1px] w-12 bg-primary-fixed-dim/40"></div>
+<span class="material-symbols-outlined text-[16px]">circle</span>
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">diamond</span>
+<span class="material-symbols-outlined text-[16px]">circle</span>
+<div class="h-[1px] w-12 bg-primary-fixed-dim/40"></div>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-gutter items-stretch">
+<!-- Left Content Card -->
+<div class="glass-panel p-12 rounded-xl flex flex-col justify-center text-center md:text-left">
+<p class="font-headline-sm text-on-surface leading-relaxed italic">
+                        "The 1,200 demigod monkeys collection and on-chain storyline."
+                    </p>
+<div class="mt-8 flex items-center gap-2 justify-center md:justify-start">
+<span class="px-3 py-1 bg-secondary-container/20 text-secondary-fixed-dim font-label-md text-label-md border border-secondary-container/30">MINTING 2024</span>
+<span class="px-3 py-1 bg-tertiary-container/20 text-tertiary-fixed-dim font-label-md text-label-md border border-tertiary-container/30">ETHEREUM</span>
+</div>
+</div>
+<!-- Right Content Card -->
+<div class="glass-panel p-12 rounded-xl flex flex-col justify-center text-center md:text-left">
+<p class="font-headline-sm text-on-surface leading-relaxed italic">
+                        "Rewards, weekly puzzles, and <span class="text-primary-fixed-dim">$CLUE</span> collecting."
+                    </p>
+<div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed">extension</span>
+<span class="font-body-md">Puzzle Solver Guild</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed">token</span>
+<span class="font-body-md">On-chain Rewards</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bento Preview Sub-Grid -->
+<div class="mt-gutter grid md:grid-cols-3 gap-gutter">
+<div class="md:col-span-2 glass-panel h-64 rounded-xl relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" data-alt="An ultra-detailed cinematic close-up of traditional Japanese fabric patterns with shimmering gold threads woven in. The lighting is soft twilight, highlighting the texture of the silk. The color palette is dominated by deep aubergine and warm gold, echoing the Shinsei Village aesthetic. Atmosphere is high-end, mystical, and sophisticated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhLQ6QHP-C4nbvysxO8N0DP-1DXtpQgaD2SJtLNqhox78uSpxISr_gIvQWtw94oKBf-jVoC4x55NBiXNDoKSTusqI2oGFRiQ_UhNqg93nIdIrEMjBke6_IIcyyQP3it-rQoEO37wPZ4Ddk4ZOLQr8Cy2x2AWf7kbTdhqVWxNk4CZPEd-XdMqjKZnqXS8Ee4ucDsa-GQGg10sGLp5taF_dGOGAcZ3sgocVzbkVxhXNGw1Y1jWjPp3UydnYH-eDh9tht7SLTyGhcdA"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h3 class="font-headline-sm text-primary-fixed-dim">Sacred Scrolls</h3>
+<p class="text-on-surface-variant">Uncover the ancient lore of the village.</p>
+</div>
+</div>
+<div class="glass-panel h-64 rounded-xl flex flex-col items-center justify-center p-8 text-center">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-4">groups</span>
+<h3 class="font-headline-sm text-on-surface">Community</h3>
+<p class="text-on-surface-variant text-body-md">Join 10k+ disciples</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full pt-section-gap pb-12 px-margin-desktop flex flex-col items-center gap-unit bg-gradient-to-b from-surface-container-lowest to-background border-t border-primary/20 rounded-t-full shadow-2xl shadow-primary-fixed/5">
+<div class="font-headline-sm text-headline-sm text-primary-fixed mb-6 tracking-widest font-bold">SHINSEI VILLAGE</div>
+<nav class="flex flex-wrap justify-center gap-8 mb-8">
+<a class="text-on-tertiary-container font-body-md hover:text-primary transition-all" href="#">Sacred Scrolls</a>
+<a class="text-secondary-fixed underline font-body-md hover:text-primary transition-all" href="#">Community</a>
+<a class="text-on-tertiary-container font-body-md hover:text-primary transition-all" href="#">Terms</a>
+<a class="text-on-tertiary-container font-body-md hover:text-primary transition-all" href="#">Privacy</a>
+</nav>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+            © 2024 SHINSEI VILLAGE. DIGITAL SPIRITUALISM.
+        </p>
+<div class="mt-8 flex gap-6">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">temple_hindu</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">self_improvement</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors">landscape</span>
+</div>
+</footer>
+</body></html>

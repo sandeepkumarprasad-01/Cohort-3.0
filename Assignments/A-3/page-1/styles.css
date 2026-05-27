@@ -1,0 +1,331 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2c242c;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background-color: #1a1418;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    color: #8a9ea6;
+    font-size: 0.7rem;
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.nav a {
+    color: #c0c0c0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 34px;
+    height: 34px;
+    background: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    height: 92vh;
+    min-height: 650px;
+    background-image: url('backgrounf.png');
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark gradient overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0.0) 35%,
+        rgba(0, 0, 0, 0.0) 55%,
+        rgba(44, 36, 44, 0.85) 90%,
+        rgba(44, 36, 44, 1) 100%
+    );
+    z-index: 1;
+}
+
+/* Curved bottom edge */
+.hero-curve {
+    position: absolute;
+    bottom: -2px;
+    left: -5%;
+    width: 110%;
+    height: 80px;
+    background-color: #2c242c;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    z-index: 2;
+}
+
+/* Text row: SHINSEI (left) ... gap for monkey ... VILLAGE (right) */
+.hero-text-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px; /* Gap for the monkey character to be visible */
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 0 60px;
+}
+
+.hero-monkey {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(23vw, 260px);
+    max-width: 260px;
+    height: auto;
+    transform: translate(-50%, -42%);
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 14px 24px rgba(0, 0, 0, 0.35));
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2px;
+}
+
+.hero-title-left,
+.hero-title-right {
+    font-size: 5.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    /* Stencil / line-through effect */
+    background: linear-gradient(
+        to bottom,
+        #ffffff 44%,
+        transparent 44%,
+        transparent 56%,
+        #ffffff 56%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(2px 3px 4px rgba(0, 0, 0, 0.6));
+}
+
+.hero-tagline {
+    font-size: 1.15rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    margin-top: 2px;
+}
+
+/* CTA Button */
+.hero-cta {
+    position: relative;
+    z-index: 3;
+    margin-top: 200px; /* Push below the character area */
+}
+
+.mint-btn {
+    background: #f0c84d;
+    color: #1a1a1a;
+    border: none;
+    padding: 16px 55px;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Scratch mark decorations on the button */
+.mint-btn::before,
+.mint-btn::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    width: 18px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.mint-btn::before {
+    left: 8px;
+    background: repeating-linear-gradient(
+        -60deg,
+        transparent,
+        transparent 2px,
+        #1a1a1a 2px,
+        #1a1a1a 3px
+    );
+}
+
+.mint-btn::after {
+    right: 8px;
+    background: repeating-linear-gradient(
+        60deg,
+        transparent,
+        transparent 2px,
+        #1a1a1a 2px,
+        #1a1a1a 3px
+    );
+}
+
+/* ========== VISION SECTION ========== */
+.vision {
+    padding: 70px 12% 90px;
+    background-color: #2c242c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+    /* Same stencil effect */
+    background: linear-gradient(
+        to bottom,
+        #ffffff 44%,
+        transparent 44%,
+        transparent 56%,
+        #ffffff 56%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Separator line */
+.separator {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.sep-line {
+    flex: 1;
+    height: 1px;
+    background-color: #c6b5a3;
+}
+
+.sep-diamond {
+    width: 12px;
+    height: 12px;
+    background-color: #c6b5a3;
+    transform: rotate(45deg);
+    margin: 0 8px;
+}
+
+.sep-dot {
+    width: 5px;
+    height: 5px;
+    background-color: #c6b5a3;
+    transform: rotate(45deg);
+    margin: 0 4px;
+}
+
+/* Two-column text */
+.vision-columns {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.vision-col {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #b8b0b8;
+    line-height: 1.7;
+}
+
+.vision-col strong {
+    color: #ffffff;
+    font-weight: 600;
+}
