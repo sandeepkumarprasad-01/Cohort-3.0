@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SunMall - Premium grilled potato chips and snacks. 100% real ingredients, oven grilled, tasty and crunchy.">
+  <title>SunMall - Grilled Potato Chips</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <div class="logo-dots">
+        <span class="ldot ldot-y1"></span>
+        <span class="ldot ldot-r"></span>
+        <span class="ldot ldot-g"></span>
+        <span class="ldot ldot-y2"></span>
+      </div>
+      <span class="logo-text">SunMall</span>
+    </div>
+
+    <ul class="navbar-links">
+      <li><a href="#" class="nav-link active">HOME</a></li>
+      <li><a href="#" class="nav-link">ABOUT</a></li>
+      <li><a href="#" class="nav-link">CHIPS</a></li>
+      <li><a href="#" class="nav-link">SERVICES</a></li>
+      <li><a href="#" class="nav-link">CONTACT</a></li>
+    </ul>
+
+    <div class="navbar-right">
+      <div class="search-box">
+        <svg class="search-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Search for chips...">
+      </div>
+      <div class="cart-wrapper">
+        <div class="cart-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </div>
+        <span class="cart-badge">4</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <main class="hero">
+    <!-- LEFT CONTENT -->
+    <div class="hero-left">
+      <div class="badge-ingredients">
+        <span class="badge-star">&#9733;</span>
+        <span class="badge-text">100% REAL INGREDIENTS</span>
+      </div>
+
+      <h1 class="hero-heading">
+        EAT OUR <span class="heading-bold">GRILLED</span><br>
+        POTATO CHIPS
+      </h1>
+
+      <div class="heading-swirl">
+        <svg width="140" height="14" viewBox="0 0 140 14">
+          <path d="M2 8 C30 2, 50 12, 80 6 S120 10, 138 4" stroke="#E8A020" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M10 11 C40 5, 60 14, 90 8 S125 12, 135 7" stroke="#EDBE50" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <p class="hero-desc">
+        Satisfying savory Chinese meat sauce chips<br>
+        without any hard-to-find ingredients.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn-cart" id="addToCart">
+          <span class="btn-cart-circle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2.5">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </span>
+          <span class="btn-cart-label">ADD TO CART</span>
+        </button>
+
+        <div class="qty-box">
+          <button class="qty-btn" id="qtyMinus">−</button>
+          <span class="qty-num">2</span>
+          <button class="qty-btn" id="qtyPlus">+</button>
+        </div>
+      </div>
+
+      <div class="hero-badges">
+        <div class="h-badge">
+          <div class="h-badge-icon hb-leaf">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3a7d1a" stroke-width="2">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L8 17c4-2 6-4 8-8z"/>
+              <path d="M2 2s7.3 1 10 4l-2 2"/>
+            </svg>
+          </div>
+          <div class="h-badge-text">
+            <strong>100% NATURAL</strong>
+            <span>No artificial flavors</span>
+          </div>
+        </div>
+        <div class="h-badge">
+          <div class="h-badge-icon hb-fire">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d48820" stroke-width="2">
+              <path d="M12 12c2-4 4-8 1-12 3 2 6 6 6 10a6 6 0 01-12 0c0-2 1-4 3-6 0 3 1 6 2 8z"/>
+            </svg>
+          </div>
+          <div class="h-badge-text">
+            <strong>OVEN GRILLED</strong>
+            <span>Not fried</span>
+          </div>
+        </div>
+        <div class="h-badge">
+          <div class="h-badge-icon hb-heart">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d44040" stroke="#d44040" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="h-badge-text">
+            <strong>TASTY &amp; CRUNCHY</strong>
+            <span>Irresistible bite</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTER PRODUCT -->
+    <div class="hero-center">
+      <!-- Decorative dots & triangles -->
+      <div class="deco deco-dot1"></div>
+      <div class="deco deco-dot2"></div>
+      <div class="deco deco-dot3"></div>
+      <div class="deco deco-tri1"></div>
+      <div class="deco deco-tri2"></div>
+      <div class="deco deco-sun">
+        <div class="sun-rays"></div>
+      </div>
+
+      <!-- Green circle bg -->
+      <div class="product-circle"></div>
+
+      <!-- Product Image -->
+      <img src="p4 photo.png" alt="Too Yumm Veggie Stix - Sour Cream & Onion" class="product-photo">
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="hero-right">
+      <div class="side-card">
+        <div class="side-icon si-green">&#127798;</div>
+        <div class="side-info">
+          <strong>EXTRA CHILI</strong>
+          <p>Zha Jiang mian is crazy hot even when it's simplified</p>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="side-icon si-red">&#127830;</div>
+        <div class="side-info">
+          <strong>BEEF FLAVOUR</strong>
+          <p>Comes with a lot extra energy calories and Oxizen</p>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <div class="side-icon si-orange">&#128293;</div>
+        <div class="side-info">
+          <strong>SMOKEY SAUCE</strong>
+          <p>The meat sauce is kind of reminiscent of a Chinese.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FLAVOURS SECTION ========== -->
+  <section class="flavours">
+    <div class="fl-header">
+      <div class="fl-title-group">
+        <h2 class="fl-title">OUR TOP<br>FLAVOURS</h2>
+        <div class="fl-deco-line">
+          <span class="fl-dot"></span>
+          <span class="fl-dash"></span>
+          <span class="fl-dot"></span>
+        </div>
+      </div>
+      <div class="fl-arrows">
+        <button class="fl-arrow" id="arrowLeft">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </button>
+        <button class="fl-arrow" id="arrowRight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="fl-cards">
+      <!-- Card 1 -->
+      <div class="fl-card">
+        <div class="fl-card-img fl-ci-green">
+          <img src="chips-packets/72364168-d22a-4940-86a4-6d1e6fe8f641.png" alt="Sour Cream & Onion Veggie Stix" class="fl-chip-img">
+        </div>
+        <div class="fl-card-info">
+          <h3>BLACK BARBECUE</h3>
+          <div class="fl-rating">
+            <span class="fl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="fl-rating-num">(4.8)</span>
+          </div>
+          <p class="fl-price">$12.30</p>
+          <button class="fl-order">ORDER NOW &nbsp;&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="fl-card">
+        <div class="fl-card-img fl-ci-red">
+          <img src="chips-packets/72364168-d22a-4940-86a4-6d1e6fe8f641 - Copy (2).png" alt="Potato Chips" class="fl-chip-img">
+        </div>
+        <div class="fl-card-info">
+          <h3>MR. POTATO</h3>
+          <div class="fl-rating">
+            <span class="fl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="fl-rating-num">(4.9)</span>
+          </div>
+          <p class="fl-price">$15.89</p>
+          <button class="fl-order">ORDER NOW &nbsp;&#8594;</button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="fl-card">
+        <div class="fl-card-img fl-ci-orange">
+          <img src="chips-packets/72364168-d22a-4940-86a4-6d1e6fe8f641 - Copy.png" alt="Tom Yomm Veggie Stix" class="fl-chip-img">
+        </div>
+        <div class="fl-card-info">
+          <h3>TOM YOMM</h3>
+          <div class="fl-rating">
+            <span class="fl-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="fl-rating-num">(4.7)</span>
+          </div>
+          <p class="fl-price">$11.50</p>
+          <button class="fl-order">ORDER NOW &nbsp;&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
