@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(218, 232, 237);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows:10% 45% 40%  ;
+    grid-template-areas: "header header header header"
+    "herodiv herodiv herodiv herodiv";
+}
+header{
+    background-color: red;
+    grid-area: header;
+}
+.herodiv{
+    background-color: rgb(142, 41, 236);
+    grid-area: herodiv;
+}
+.bottom-left{
+background-color: aquamarine;
+}
+.bottom-center{
+background-color:bisque;
+}
+.bottom-right{
+background-color: pink ;
+}
