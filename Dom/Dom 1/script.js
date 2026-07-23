@@ -1,14 +1,28 @@
-// console.log("heyyy");
-// // textcontent("only changes or updates")
-// const h1 = document.querySelector("h1")
-
-
-// h1.style.color = "red";
-// const isClass =  h1.classList.contains("heading")
-// console.log(isClass);
-
-
-
-
+//
 const bulb = document.querySelector(".bulb")
 const btn = document.querySelector("button")
+// let flag =true;
+
+// btn.addEventListener('click',function(){
+//  if(flag){
+//     bulb.style.backgroundColor= "Yellow";
+//     btn.textContent= "OFF";
+//     flag = false ;
+
+//  }else{
+//     bulb.style.backgroundColor= "transparent";
+//     btn.textContent= "ON";
+//     flag = true;
+
+//  }
+// });
+ 
+//another way 
+btn.addEventListener("click",function(){
+    if(bulb.classList.toggle("lightUp")){
+        btn.textContent = "OFF";
+    }else{
+        btn.textContent = "ON";
+    }
+});
+ 
