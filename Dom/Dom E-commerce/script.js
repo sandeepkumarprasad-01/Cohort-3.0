@@ -144,4 +144,4 @@ const deleteProduct = (index) => {
 
 // let value = JSON.parse(lsd);
 
-// console.log(value);
+// console.log(value);w
