@@ -1,0 +1,11 @@
+notes app-
+1.title -required
+2.description-required min length-20characters 
+
+we create crud
+
+
+
+
+
+
