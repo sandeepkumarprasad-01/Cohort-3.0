@@ -1,15 +1,19 @@
-const mongoose = require("mongoose")
-const notesSchema = new mongoose.Schema({
+
+const mongoose = require("mongoose");
+
+const  notesSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true,  },
+        required: true
+    },
+
     description: {
         type: String,
-        required: true,    
-        minlength: [20,"minimum 20 characters are required "],  
-    },     
-})
+        required: true,
+        minlength: [20, "minimum 20 characters are required"]
+    }
+});
+
 const NotesModel = mongoose.model("notes", notesSchema);
 
-module.exports = NotesModel();
-
+module.exports = NotesModel;
