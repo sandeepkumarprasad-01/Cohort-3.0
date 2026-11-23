@@ -2,6 +2,8 @@
 const express = require("express");
 const notesModel = require("./models/notes.model");
 const connectDb = require("./config/db");
+const createNotesController = require("./controllers/notes.controller");
+const notesRoute=require("./controllers/notes.controller")
 
 const app = express();
 
@@ -14,28 +16,8 @@ app.get("/", (req, res) => {
 });
 
 // Create note
-app.post("/create", async (req, res) => {
-    try {
-        let { title, description } = req.body
+app.post("/create",createNotesController );
 
-        let  newNote = await notesModel.create({
-            title,
-            description,
-        });
-            return res.status(201).json({
-            message: "Note created successfully",
-            data: newNote,
-        });
-
-
-    } catch (error) {
-        console.log("Error in creation:", error);
-
-        return res.status(500).json({
-            message: "Error creating note",
-            error: error.message
-        });
-    }
-});
+app.use("/notes",notesRoute)
 
 module.exports = app;
