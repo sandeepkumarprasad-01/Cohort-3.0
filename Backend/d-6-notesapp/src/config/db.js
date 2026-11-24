@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
-const connectDb = async () => {
+const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb://localhost:27017/notes-app");
-    console.log("mongodb connected successfully!");
+    await mongoose.connect(process.env.mongodb_uri);
+    console.log("mongodb connected");
   } catch (error) {
-    console.log("error while connecting db :", error);
+    console.log("error while connecting db", error);
   }
 };
 
-module.exports = connectDb;
+module.exports = connectDB;

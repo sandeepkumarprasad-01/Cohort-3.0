@@ -1,23 +1,19 @@
-
 const express = require("express");
-const notesModel = require("./models/notes.model");
-const connectDb = require("./config/db");
+const NotesModel = require("./models/notes.model");
+const connectDB = require("./config/db");
 const createNotesController = require("./controllers/notes.controller");
-const notesRoute=require("./controllers/notes.controller")
+const notesRoute = require("./routes/notes.route");
 
 const app = express();
 
-app.use(express.json());
-connectDb();
+connectDB();
 
-// Home route
+app.use(express.json());
+
 app.get("/", (req, res) => {
-    res.send("ok got it");
+  res.send("ok got it");
 });
 
-// Create note
-app.post("/create",createNotesController );
-
-app.use("/notes",notesRoute)
+app.use("/notes", notesRoute);
 
 module.exports = app;
